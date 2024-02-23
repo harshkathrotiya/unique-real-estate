@@ -1,0 +1,85 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+{% tailwind_css %}
+</head>
+
+
+
+<body class="font-[Poppins] bg-gradient-to-t from-[rgb(237,245,238)] to-[rgb(237,245,238)] h-screen">
+    <header class="bg-[rgb(237,245,238)]">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-[rgb(237,245,238)] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-[rgb(76,161,84)]" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[rgb(76,161,84)]" href="#">Solution</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[rgb(76,161,84)]" href="#">Resource</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[rgb(76,161,84)]" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[rgb(76,161,84)]" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[rgb(76,161,84)] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+<section class=s>
+
+  <p class="text-my-400">hello</p>
+</section>
+
+<div class="relative lg:ms-10">
+  <div class="p-5 shadow dark:shadow-gray-700 rounded-t-full bg-white dark:bg-slate-900">
+      <img src="assets/images/hero.jpg" class="shadow-md rounded-t-full rounded-md" alt="">
+  </div>
+  <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+      <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="lightbox h-20 w-20 rounded-full shadow-md dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-green-600">
+          <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+      </a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+      
+
+
+
+
+
+</body>
+</html>
